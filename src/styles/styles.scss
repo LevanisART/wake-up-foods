@@ -1,0 +1,185 @@
+﻿@import '../bootstrap/scss/bootstrap';
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'animations';
+
+// @include scrollbars(13px, $primaryColor, #FFF);
+
+.header {
+  background: #FFF;
+  border-bottom: 1px solid #EEF1F6;
+}
+
+.topbar {
+  background: $primaryColor;
+  span {
+    font-weight: 500;
+  }
+  .offer-button a {
+    background: #000;
+    color: #FFF;
+    font: {
+      size: 13.5px;
+      weight: 500;
+    }
+  }
+}
+
+.logo {
+  svg {
+    height: 36px;
+  }
+}
+
+.navbar-icons {
+  right: 0;
+}
+
+.navbar.navbar-light {
+  .nav-item {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .nav-link {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.navbar-light .navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: $primaryColor;
+  border-color: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23CD3D40' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cpath d='M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z'/%3E%3Cpath d='M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z'/%3E%3Cpath d='M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20 C512,404.954,503.046,396,492,396z'/%3E%3C/svg%3E%0A");
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  span {
+    color: #000 !important;
+    font-size: 14px;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #c73025;
+  border-color: #c73025;
+}
+.btn-primary:active {
+  background-color: #c73025;
+  border-color: #c73025;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  background-color: #c73025;
+  border-color: #c73025;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(205,61,64,.5);
+  outline: none;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.section-top {
+  background-color: $primaryColor;
+  background-image: url('../images/section-top.png');
+  background-size: cover;
+  @media (min-width: 1400px) {
+    background-position: center -70px;
+  }
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .section-top-title {
+    color: #FFF;
+    font-size: 44px;
+    font-weight: 700;
+    padding: 0 30px;
+    width: 100%;
+    @media(min-width: 700px) {
+      width: 620px;
+      padding: 0;
+    }
+    text-align: center;
+    line-height: 60px;
+  }
+  .section-top-description {
+    color: #FFF;
+    font: {
+      size: 18px;
+      weight: 500;
+    }
+  }
+  .btn-primary {
+    a {
+      font: {
+        size: 15px;
+        weight: 600;
+      }
+      color: #000;
+    }
+  }
+}
+
+.footer {
+  box-shadow: 0 -4px 4px rgba(221, 221, 221, .25);
+  .footer-info {
+    border-top: 1px solid #F4F4F8;
+    background: #FAFAFC;
+    span {
+      color: #000;
+      font: {
+        size: 14px;
+      }
+      line-height: 23px;
+    }
+  }
+}
