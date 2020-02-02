@@ -1481,6 +1481,13 @@
     }
   }
   
+  .modal {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
   .modal-dialog {
     @media (min-width: 567px) {
       max-width: 500px;
