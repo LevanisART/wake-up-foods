@@ -12,49 +12,51 @@
 <body>
   <div class="page">
     <div class="wrapper">
-      <header class="header">
+      <header id="header" class="header">
         <div class="topbar py-3">
           <div class="container">
-            <div class="d-flex align-items-center justify-content-center flex-wrap">
-              <span>Today Only 1 FREE Box !</span>
-              <span class="ml-4">8 : 20 : 54</span>
-              <div class="offer-button ml-5 my-1">
+            <div class="d-flex align-items-center justify-content-center flex-wrap flex-column flex-md-row">
+              <span class="my-2 mx-4">Today Only 1 FREE Box !</span>
+              <span class="my-2">8 : 20 : 54</span>
+              <div class="offer-button mx-5 my-2">
                 <a class="py-2 px-3 rounded-sm" href="#">Unlock Offer</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="container d-flex justify-content-between justify-content-md-center align-items-center my-4 position-relative">
-          <nav class="navbar navbar-expand-md p-0 navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav d-flex align-items-center animated fadeIn">
-                <li class="nav-item">
-                  <a class="nav-link p-0" href="#">Shop Now</a>
-                </li>
-                <div class="logo d-none d-md-flex">
-                  <a href="#"><img src="images/logo.svg" alt=""></a>
-                </div>
-                <li class="nav-item">
-                  <a class="nav-link p-0" href="#">Our Story</a>
-                </li>
-              </ul>
+        <div id="header-navbar" class="header-navbar py-4">
+          <div class="container d-flex justify-content-between justify-content-md-center align-items-center position-relative">
+            <nav class="navbar navbar-expand-md p-0 navbar-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex align-items-center animated fadeIn">
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="/product.html">Shop Now</a>
+                  </li>
+                  <div class="logo d-none d-md-flex">
+                    <a href="#"><img src="images/logo.svg" alt=""></a>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Our Story</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+  
+            <div class="logo d-md-none d-flex">
+              <a href="#"><img src="images/logo.svg" alt=""></a>
             </div>
-          </nav>
-
-          <div class="logo d-md-none d-flex">
-            <a href="#"><img src="images/logo.svg" alt=""></a>
-          </div>
-
-          <div class="navbar-icons d-flex position-absolute h-100 align-items-center">
-            <div class="user-panel">
-              <a href="#"><img src="images/user.svg" alt=""></a>
-            </div>
-            <div class="cart ml-4">
-              <a href="#"><img src="images/cart.svg" alt=""></a>
+  
+            <div class="navbar-icons d-flex position-absolute h-100 align-items-center">
+              <div class="user-panel">
+                <a href="#"><img src="images/user.svg" alt=""></a>
+              </div>
+              <div class="cart ml-4">
+                <a href="#"><img src="images/cart.svg" alt=""></a>
+              </div>
             </div>
           </div>
         </div>
@@ -66,14 +68,14 @@
             <div class="col-10 py-lg-4 py-xl-5 col-sm-8 col-md-6 col-lg-5 col-xl-4 d-flex flex-column align-items-center justify-content-center">
               <h1 class="section-top-title w-100 animated fadeInUp">The World’s First <br/> Gluten-Free, High-Protein, Plant-Based Waffles</h1>
               <p class="section-top-description my-4">Vegan. Dairy, Nut & Soy Free. Only 6-9 ingredients.</p>
-              <div class="btn-primary mt-3 bg-white d-flex"><a class="py-3 px-5 mx-4 my-1" href="#">Try It Now</a></div>
+              <div class="btn-primary mt-3 bg-white d-flex"><a class="py-3 px-5 mx-4 my-1" href="/product.html">Try It Now</a></div>
             </div>
           </div>
         </div>
 
         <div class="sections">
           <div class="section logo-section py-5">
-            <div class="container d-flex align-items-center justify-content-start justify-content-sm-between flex-wrap py-2">
+            <div class="container d-flex align-items-center justify-content-start justify-content-sm-between py-2">
               <div class="logo">
                 <a class="py-4 pr-3" href="#">
                   <svg width="123" height="42" viewBox="0 0 123 42" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M0 4.66667V9.33334H2.54545H5.09091L5.00606 20.8727L4.87879 32.4546L2.46061 32.5818L0 32.7091V36.9091V41.1515H14.2121H28.4242V36.9091V32.7091L25.7939 32.5818L23.1212 32.4546V21V9.54546L25.7939 9.41819L28.4242 9.29092V4.66667V8.54207e-06H14.2121H0V4.66667Z" fill="#BABACE"/><path d="M30.5454 13.9576V18.2L32.3697 18.3273L34.1515 18.4545V25.4545V32.4545L32.3697 32.5818L30.5454 32.7091V36.9515V41.1515H41.5757H52.606V36.9515V32.7091L50.6121 32.5818L48.5757 32.4545L48.4485 27.7879C48.3212 24.0121 48.4485 22.8667 49.0424 21.7212C50.697 18.6242 55.5757 17.5212 57.8242 19.7697C59.2242 21.1697 59.4788 22.4424 59.3091 28L59.1818 32.4545L57.0606 32.5818L54.9394 32.7091V36.9091V41.1515H65.8848H76.7879V37.1212C76.7879 32.9212 77.1697 32.2 78.2303 34.2364C80.606 38.8182 87.8182 42 95.7939 42C101.988 42 107.079 40.303 109.752 37.3758C111.024 35.9758 112.848 32.3273 112.848 31.097C112.848 30.2061 112.679 30.1636 107.121 30.0364L101.436 29.9091L100.758 31.6061C99.9939 33.6848 98.297 34.7879 95.8788 34.7879C93.4606 34.7879 91.4242 33.4727 90.703 31.4788C89.9394 29.2727 89.9818 21.7636 90.7879 20.1939C92.2727 17.2667 96.0909 16.2909 98.6788 18.1152C99.7394 18.8788 100.164 19.6424 100.63 21.5091C100.97 22.8667 101.394 23.9697 101.606 23.9697C103.43 23.8848 110.77 23.2485 111.703 23.0788C112.848 22.8242 112.891 22.7394 112.636 21.297C112.255 19.3455 110.685 16.2485 109.242 14.7212C106.4 11.7091 101.903 10.097 96.303 10.0121C87.1394 9.88485 79.3333 14 76.9576 20.1515C76.0667 22.4424 75.8545 27.6182 76.4909 30.8424L76.8727 32.6667H75.1757H73.4788L73.3091 25.3273C73.1818 18.1152 73.1394 17.903 71.9091 15.4424C70.806 13.2788 70.297 12.7697 68.1333 11.7091C66.0545 10.6485 65.0788 10.3939 61.7697 10.2667C59.0545 10.1394 57.2303 10.3091 55.703 10.7333C53.2 11.497 49.8909 13.5758 49.2121 14.8485C48.3636 16.4182 47.9394 15.697 47.9394 12.7273V9.75758H39.2424H30.5454V13.9576Z" fill="#BABACE"/><path d="M115.564 31.8182C114.079 32.4121 112.424 34.7454 112.424 36.2303C112.424 38.1818 114.036 40.3879 115.903 41.0242C119.933 42.3394 123.624 38.5212 122.012 34.6606C120.951 32.1151 118.024 30.8 115.564 31.8182Z" fill="#BABACE"/></g><defs><clipPath id="clip0"><rect width="122.606" height="42" fill="white"/></clipPath></defs></svg>
@@ -198,7 +200,7 @@
               </div>
 
               <div class="d-flex justify-content-center pt-4">
-                <a class="btn-primary py-3 px-5 d-flex mt-2" href="#"><span class="mx-4 my-1">Try It Now</span></a>
+                <a class="btn-primary py-3 px-5 d-flex mt-2" href="/product.html"><span class="mx-4 my-1">Try It Now</span></a>
               </div>
             </div>
           </div>
@@ -216,7 +218,7 @@
                       </div>
                       <div class="pt-4">
                         <h2 class="waffle-title d-flex text-center justify-content-center">BERRY</h2>
-                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="#"><span class="mx-4">Try Now</span></a>
+                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="/product.html"><span class="mx-4">Try Now</span></a>
                       </div>
                     </div>
                   </div>
@@ -228,7 +230,7 @@
                       </div>
                       <div class="pt-4">
                         <h2 class="waffle-title d-flex text-center justify-content-center">CINNAMON</h2>
-                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="#"><span class="mx-4">Try Now</span></a>
+                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="/product.html"><span class="mx-4">Try Now</span></a>
                       </div>
                     </div>
                   </div>
@@ -240,7 +242,7 @@
                       </div>
                       <div class="pt-4">
                         <h2 class="waffle-title d-flex text-center justify-content-center">CLASSIC</h2>
-                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="#"><span class="mx-4">Try Now</span></a>
+                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="/product.html"><span class="mx-4">Try Now</span></a>
                       </div>
                     </div>
                   </div>
@@ -252,7 +254,7 @@
                       </div>
                       <div class="pt-4">
                         <h2 class="waffle-title d-flex text-center justify-content-center">COCOA</h2>
-                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="#"><span class="mx-4">Try Now</span></a>
+                        <a class="btn-primary py-3 px-3 d-flex mt-3" href="/product.html"><span class="mx-4">Try Now</span></a>
                       </div>
                     </div>
                   </div>
@@ -336,7 +338,7 @@
             <div class="container my-1">
               <div class="d-flex align-items-center justify-content-center justify-content-sm-between flex-wrap">
                 <h2 class="section-title animated fadeInDown col-12 col-sm-6 col-md-9 px-0 text-sm-left text-center mb-4 mb-sm-0">Low Carb. High Protein. Freaking DELICIOUS!</h2>
-                <div class="btn-primary bg-white d-flex"><a class="py-3 px-5 mx-4 my-1" href="#">Try It Now</a></div>
+                <div class="btn-primary bg-white d-flex"><a class="py-3 px-5 mx-4 my-1" href="/product.html">Try It Now</a></div>
               </div>
             </div>
           </div>
@@ -357,12 +359,12 @@
             <a class="py-4" href="#"><img src="images/logo.svg" alt=""></a>
           </div>
           <div class="footer-nav">
-            <ul class="d-flex">
-              <li class="mr-3"><a href="#">Terms of Use</a></li>
-              <li class="mr-3"><a href="#">Privacy Policy</a></li>
-              <li class="mr-3"><a href="#">FAQ</a></li>
-              <li class="mr-3"><a href="#">Contact</a></li>
-              <li class="mr-3"><a href="#">Reviews</a></li>
+            <ul class="d-flex flex-wrap justify-content-center">
+              <li class="my-2 mr-3"><a href="#">Terms of Use</a></li>
+              <li class="my-2 mr-3"><a href="#">Privacy Policy</a></li>
+              <li class="my-2 mr-3"><a href="#">FAQ</a></li>
+              <li class="my-2 mr-3"><a href="#">Contact</a></li>
+              <li class="my-2 mr-3"><a href="#">Reviews</a></li>
             </ul>
           </div>
 
