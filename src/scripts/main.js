@@ -46,3 +46,31 @@ $(document).ready(function() {
 });
 
 $('.modal').modal('show');
+
+
+var $dialog = $('#offer');
+
+$(document).ready(function(){
+  $dialog.dialog({
+    modal: true,
+    autoOpen: true,
+    width: 500,
+    buttons: {
+      "CONTINUE WITHOUT OFFER": function () {
+          $(this).dialog("close")
+      }
+    }
+  });
+});
+
+$('input').click(function () {
+  $dialog.html("<br /><a id='modalClose'>CloseMe</a>");
+  $dialog.dialog('open');
+});
+// Bind the click event that closes the modal
+$("body").on('click', '#modalClose', function (e) {
+    // prevent the default action, e.g., following a link
+    e.preventDefault();
+    // Need to close the Modal
+    $dialog.dialog('close');
+});

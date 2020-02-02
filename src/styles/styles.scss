@@ -3,7 +3,7 @@
 @import 'mixins';
 @import 'fonts';
 @import 'reset';
-// @import 'animations';
+@import 'animations';
 
 // @include scrollbars(13px, $primaryColor, #FFF);
 
@@ -1048,19 +1048,9 @@
 }
 
 
-.modal-dialog {
-  @media (min-width: 567px) {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  .modal-content {
-    border-radius: 10px;
-    text-align: center;
-  }
+.dialog {
+  border-radius: 10px;
+  text-align: center;
   .modal-title {
     font: {
       size: 15px;
@@ -1099,6 +1089,55 @@
       weight: 500;
     }
     text-decoration: underline;
+  }
+}
+
+.ui-dialog-titlebar.ui-widget-header {
+  border: none;
+  background: none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  margin: 0;
+  padding: 1px;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12.5' cy='12.5' r='12.5' fill='%236F83A0'/%3E%3Crect x='16.0356' y='7.19669' width='2.5' height='12.5' rx='1.25' transform='rotate(45 16.0356 7.19669)' fill='white'/%3E%3Crect x='7.19629' y='8.96445' width='2.5' height='12.5' rx='1.25' transform='rotate(-45 7.19629 8.96445)' fill='white'/%3E%3C/svg%3E%0A");
+  width: 25px;
+  height: 25px;
+  background-color: #FFF;
+  border: none;
+}
+
+.ui-widget-overlay {
+  background: #000;
+}
+
+.ui-widget.ui-widget-content {
+  border: none !important;
+  border-radius: 10px;
+}
+
+.ui-dialog-buttonpane {
+  display: flex;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 0 0 2rem 0 !important;
+  button {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: $textColor;
+    font: {
+      size: 13px !important;
+      weight: 500;
+    }
+    text-decoration: underline;
+    background: none;
+    border: none;
+  }
+  &.ui-widget-content {
+    border: none;
   }
 }
 
@@ -1481,35 +1520,24 @@
     }
   }
   
-  .modal {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    right: 0;
+
+  .ui-dialog {
+    width: calc(100% - 4rem) !important;
+    margin: 2rem !important;
   }
 
-  .modal-dialog {
-    @media (min-width: 567px) {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    .modal-content {
-      border-radius: 10px;
-      text-align: center;
-    }
+  .dialog {
+    border-radius: 10px;
+    text-align: center;
     .modal-title {
       font: {
-        size: 13px;
+        size: 15px;
         weight: 500;
       }
     }
     .modal-title-big {
       font: {
-        size: 24px;
+        size: 28px;
         weight: 600;
       }
       color: $titleColor;
@@ -1527,11 +1555,11 @@
         font-size: 13px;
       }
     }
-
+  
     .claim-offer label {
       font-size: 13px;
     }
-
+  
     .close-modal {
       color: $textColor;
       font: {
