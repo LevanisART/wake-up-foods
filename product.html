@@ -62,10 +62,40 @@
         </div>
       </header>
 
+
+      <div id="cart-fixed" class="cart-fixed py-4 d-none d-md-block animated fadeInUp">
+        <div class="container d-flex justify-content-center">
+          <div class="d-flex justify-content-between w-100">
+            <div class="d-flex">
+              <div class="product-image">
+                <img src="images/waffles/product-various.png" alt="">
+              </div>
+              <div class="d-flex flex-column my-2 mx-3 pl-1">
+                <span class="product-title">Variety</span>
+                <span class="product-price mt-2 pt-1">$40.00</span>
+              </div>
+            </div>
+
+            <div class="add-product d-flex justify-content-end my-3 px-0 col-lg-6 col-xl-5">
+              <div class="input-counter py-3 col-4 px-1 d-flex align-items-center">
+                <span class="counter-btn minus"></span>
+                <input type="text" name="quantity" value="1" size="9999">
+                <span class="counter-btn plus"></span>
+              </div>
+
+              <div class="add-to-cart d-flex justify-content-center ml-3">
+                <a class="btn-primary py-3 px-5 d-flex w-100 d-flex justify-content-center" href="/product.html">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <main class="content">
         
         <div class="container my-md-5 py-5">
-          <div class="product d-flex flex-wrap">
+          <div class="product animated fadeIn d-flex flex-wrap">
             <div class="col-12 col-lg-7 pl-0 pr-0 pr-lg-5 gallery-slider d-flex flex-column">
               <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
                 <li data-thumb="/images/waffles/product-classic.png"> 
@@ -169,15 +199,15 @@
           <div class="section my-5 py-2 py-lg-5 light-bg">
             <div class="container my-5">
               <div class="trust-reinforcement d-flex align-items-center justify-content-between">
-                <div class="icons bg-white rounded-lg py-3 px-4">
+                <div class="icons animated fadeInLeft bg-white rounded-lg py-3 px-4">
                   <img class="img-fluid" src="images/icons1.png" alt="">
                 </div>
 
-                <div class="section-img mx-4">
+                <div class="section-img animated fadeIn mx-4">
                   <img src="images/waffle.png" alt="">
                 </div>
 
-                <div class="icons bg-white rounded-lg py-3 px-4">
+                <div class="icons animated fadeInRight bg-white rounded-lg py-3 px-4">
                   <img class="mx-3 img-fluid" src="images/icons2.png" alt="">
                 </div>
               </div>
@@ -189,7 +219,7 @@
             <div class="container my-5">
               <h2 class="section-title text-center animated fadeInDown">Frequently Asked Questions</h2>
               
-              <div class="faq mt-4 mt-sm-5 mb-4 d-flex justify-content-center">
+              <div class="faq mt-4 mt-sm-5 mb-4 d-flex justify-content-center animated fadeIn">
 
                 <div class="col-12 col-lg-9 mx-auto">
                   <div id="accordionExample" class="accordion">
@@ -259,7 +289,7 @@
             <div class="container">
               <h2 class="section-title text-center animated fadeInDown">How do we stack up to the “classics”?</h2>
               
-              <div class="compare mt-5 mb-4 d-flex">
+              <div class="compare mt-5 mb-4 d-flex animated fadeIn">
                 <div class="table-responsive">
                   <table class="table table2">
                     <thead>
@@ -298,7 +328,7 @@
             <div class="container mt-5">
               <h2 class="section-title text-center animated fadeInDown">Customer Reviews</h2>
               
-              <div class="review-stars d-flex justify-content-center flex-wrap mt-md-5 mb-5 pt-3">
+              <div class="review-stars d-flex justify-content-center flex-wrap mt-md-5 mb-5 pt-3 animated fadeIn">
                 <div class="col-12 col-lg-9 px-0 d-flex align-items-start justify-content-center justify-content-md-between flex-wrap w-100">
                   <div class="col-12 col-md-5 col-lg-5 col-xl-4 reviews-quantity d-flex justify-content-center align-items-center pr-4 pl-0 my-4 pt-2">
                     <div class="star d-flex align-items-center mr-1"><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.439209 6.52338L6.70499 5.70896L9.5381 0.419189L12.2994 5.74454L18.5525 6.63407L13.9968 10.7378L15.0228 16.5811L9.44521 13.7938L3.82965 16.5138L4.9401 10.6864L0.439209 6.52338Z" fill="#FFB503"/><path d="M0.553939 6.90749C2.39905 6.66633 4.23994 6.42912 6.08505 6.18796C6.32149 6.15633 6.57905 6.14842 6.81127 6.09307C7.06883 6.03377 7.17016 5.7254 7.27572 5.52773C7.76549 4.61447 8.25527 3.70121 8.74083 2.78796C9.12927 2.06447 9.51772 1.34098 9.90616 0.617493C9.66127 0.617493 9.42061 0.617493 9.17572 0.617493C9.99061 2.18703 10.8013 3.75261 11.6162 5.32214C11.7217 5.52377 11.8146 5.74517 11.9371 5.94284C12.0806 6.16819 12.3973 6.16028 12.6422 6.19191C13.7188 6.3461 14.7997 6.50028 15.8764 6.65052C16.7335 6.77307 17.5864 6.89563 18.4435 7.01424C18.3802 6.79284 18.3211 6.5754 18.2577 6.354C16.9151 7.56377 15.5766 8.76958 14.2339 9.97935C14.0566 10.1375 13.8666 10.2877 13.7019 10.4577C13.4993 10.6633 13.6217 11.0152 13.6639 11.2682C13.8371 12.2645 14.0144 13.2568 14.1875 14.2531C14.331 15.0635 14.4746 15.878 14.6182 16.6884C14.8251 16.5382 15.0319 16.3919 15.2388 16.2417C13.5964 15.4194 11.9539 14.601 10.3157 13.7787C10.1004 13.6719 9.88505 13.5533 9.66549 13.4545C9.37416 13.324 9.08705 13.5256 8.82949 13.6482C7.87527 14.1107 6.91683 14.5733 5.96261 15.0398C5.18149 15.4194 4.40038 15.7949 3.61927 16.1745C3.82616 16.3247 4.03305 16.471 4.23994 16.6212C4.56505 14.9054 4.89438 13.1896 5.21949 11.4738C5.26172 11.2484 5.30816 11.0231 5.35038 10.7938C5.40527 10.4775 5.13083 10.3035 4.91549 10.1059C4.15127 9.39819 3.38283 8.69052 2.61861 7.97889C1.99372 7.40168 1.36883 6.82052 0.743939 6.24331C0.355495 5.88354 -0.239838 6.44493 0.148606 6.80075C1.46172 8.01447 2.77483 9.23214 4.09216 10.4459C4.27794 10.6159 4.46372 10.7898 4.6495 10.9598C4.6115 10.8333 4.57772 10.7028 4.53972 10.5763C4.21461 12.2803 3.89372 13.9803 3.56861 15.6842C3.52216 15.9254 3.47572 16.1666 3.42927 16.4077C3.36594 16.7477 3.70794 17.0205 4.04994 16.8545C5.68816 16.0598 7.33061 15.2652 8.96883 14.4705C9.20105 14.3598 9.43327 14.2452 9.66549 14.1345C9.52194 14.1345 9.38261 14.1345 9.23905 14.1345C10.8688 14.9489 12.4986 15.7633 14.1242 16.5777C14.3564 16.6924 14.5844 16.807 14.8166 16.9217C15.1628 17.0956 15.4964 16.811 15.4373 16.4749C15.1375 14.767 14.8377 13.0631 14.5379 11.3552C14.4957 11.114 14.4535 10.8728 14.4113 10.6317C14.3733 10.7582 14.3395 10.8887 14.3015 11.0152C15.6315 9.81726 16.9615 8.6154 18.2957 7.41749C18.4857 7.24749 18.6715 7.07749 18.8615 6.90749C19.0726 6.71772 18.9966 6.29075 18.6757 6.24726C16.8517 5.98633 15.0235 5.72935 13.1995 5.46842C12.9419 5.43284 12.6844 5.39331 12.4268 5.35773C12.5113 5.41703 12.5957 5.48028 12.6802 5.53959C11.8737 3.98587 11.0673 2.42819 10.2608 0.87447C10.1468 0.653074 10.0328 0.435633 9.91883 0.214237C9.78372 -0.0466927 9.32772 -0.0427393 9.18838 0.214237C8.36083 1.76005 7.53327 3.30586 6.70572 4.85168C6.58749 5.06912 6.47349 5.29052 6.35527 5.50796C6.43972 5.44866 6.52416 5.3854 6.60861 5.3261C4.78038 5.56331 2.95216 5.80052 1.11972 6.03772C0.862162 6.06935 0.600384 6.10493 0.342828 6.13656C0.114828 6.16424 -0.00761613 6.43703 0.0472728 6.62284C0.0979394 6.8561 0.325939 6.93517 0.553939 6.90749Z" fill="#FFB503"/></svg></div>
@@ -386,7 +416,7 @@
                 </div>
               </div>
               
-              <div class="reviews-section d-flex flex-wrap mt-5 mb-5 pt-3">
+              <div class="reviews-section d-flex flex-wrap mt-5 mb-5 pt-3 animated fadeIn">
                 <div class="reviews-title w-100">
                   <h4 class="title float-left py-2">Reviews (206)</h4>
                 </div>
@@ -519,10 +549,10 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='scripts/main.min.js'></script>
 
-    <footer class="footer mb-5">
+    <footer class="footer mb-5 pb-md-5 animated fadeIn">
       <div class="container footer-sections py-3 py-lg-5 d-flex align-items-center justify-content-between">
         <div class="col-12 col-lg-7 px-0 d-flex flex-column align-items-lg-start align-items-center mb-5 mb-lg-0">
-          <div class="logo d-flex animated fadeIn">
+          <div class="logo d-flex">
             <a class="py-4" href="/index.html"><img src="images/logo.svg" alt=""></a>
           </div>
           <div class="footer-nav">

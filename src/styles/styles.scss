@@ -209,7 +209,6 @@
 
 .logo-section {
   border-bottom: 1px solid #F3F3F3;
-  overflow-x: scroll;
   .logo {
     a {
       svg path {
@@ -1015,6 +1014,94 @@
   }
 }
 
+.cart-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #FFF;
+  z-index: 1;
+  border-top: 1px solid #F8F8F8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+  .product-image {
+    width: 89px;
+    height: 80px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .product-title {
+    font: {
+      size: 19px;
+      weight: 600;
+    }
+  }
+  .product-price {
+    font: {
+      size: 18px;
+      weight: 600;
+    }
+    color: $primaryColor;
+  }
+}
+
+
+.modal-dialog {
+  @media (min-width: 567px) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  .modal-content {
+    border-radius: 10px;
+    text-align: center;
+  }
+  .modal-title {
+    font: {
+      size: 15px;
+      weight: 500;
+    }
+  }
+  .modal-title-big {
+    font: {
+      size: 28px;
+      weight: 600;
+    }
+    color: $titleColor;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .modal-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .input-group {
+    input {
+      border: 1px solid #F5F5F5;
+      font-size: 13px;
+    }
+  }
+
+  .claim-offer label {
+    font-size: 13px;
+  }
+
+  .close-modal {
+    color: $textColor;
+    font: {
+      size: 13px;
+      weight: 500;
+    }
+    text-decoration: underline;
+  }
+}
 
 
 .footer {
@@ -1257,6 +1344,7 @@
 @include media-breakpoint-down(xs) {
   .logo-section {
     padding: 0 !important;
+    overflow-x: scroll;
     .logo {
       padding: 1rem 2rem 1rem 0;
       a {
