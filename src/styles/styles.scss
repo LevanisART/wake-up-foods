@@ -410,6 +410,25 @@
   }
 }
 
+.compare .table2 {
+  width: calc(100% - 1px);
+  tbody tr th {
+    border: none;
+    border-right: 1px solid #F5F5F5;
+  }
+  thead tr td {
+    border: none;
+  }
+  tbody tr {
+    border-right: 1px solid #F5F5F5;
+  }
+  td, th {
+    vertical-align: middle;
+  }
+  .emoji {
+    font-size: 22px;
+  }
+}
 
 
 .lSSlideOuter {
@@ -505,7 +524,7 @@
   display: block;
   height: auto;
   width: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .lSSlideOuter .lSPager.lSGallery:after,.lSSlideOuter .lSPager.lSGallery:before {
@@ -838,8 +857,6 @@
 }
 
 
-
-
 @media (max-width: 430px) {
   .add-product {
     flex-direction: column;
@@ -856,6 +873,147 @@
   }
 }
 
+
+.faq {
+  .question-card {
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    .question {
+      padding: 18px 22px 22px;
+      line-height: 26px;
+      font: {
+        size: 15px;
+        weight: 500;
+      }
+      color: #6F83A0;
+      &:hover {
+        color: #6F83A0;
+      }
+    }
+    .question-answer {
+      font-size: 14px;
+      line-height: 30px;
+      color: $textColor;
+    }
+    .question::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='10' fill='%236F83A0'/%3E%3Crect x='9' y='5' width='2' height='10' rx='1' fill='white'/%3E%3Crect x='5' y='11' width='2' height='10' rx='1' transform='rotate(-90 5 11)' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    
+    .question[aria-expanded='true'] {
+      color: $primaryColor;
+    }
+    
+    .question[aria-expanded='true']::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23FF9900'/%3E%3Crect x='5' y='11' width='2' height='10' rx='1' transform='rotate(-90 5 11)' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    
+    .question[aria-expanded='true']::before {
+      transform: rotate(180deg);
+    }    
+  }
+}
+
+.review-stars {
+  .reviews-quantity {
+    .reviews-title {
+      font-size: 17px;
+    }
+  }
+
+  .stars-quantity {
+    .progress {
+      background: #EFF0F1;
+      border-radius: 0;
+      .progress-bar {
+        background-color: $primaryColor;
+      }
+    }
+  }
+
+  .line {
+    width: 1px;
+    height: 100%;
+    display: flex;
+    background: #F5F5F5;
+  }
+}
+
+.reviews-section {
+  .reviews-title {
+    border-bottom: 1px solid #F5F5F5;
+    .title {
+      color: $titleColor;
+      border-bottom: 3px solid $primaryColor;
+      font: {
+        size: 15px;
+        weight: 600;
+      }
+    }
+  }
+
+  .review {
+    .user-img {
+      width: 53px;
+      height: 53px;
+      background: #F2F2F2;
+      img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .about-user span {
+      font: {
+        size: 13px;
+        weight: 500;
+      }
+    }
+
+    .review-date {
+      font: {
+        size: 12px;
+        weight: 500;
+      }
+    }
+
+    .review-text {
+      margin-left: 70px;
+      .subject {
+        font: {
+          size: 14px;
+          weight: 600;
+        }
+      }
+      .text {
+        color: $textColor;
+        font: {
+          size: 13px;
+          weight: 500;
+        }
+        line-height: 23px;
+      }
+    }
+
+    .review-buttons {
+      .review-item {
+        span {
+          color: $titleColor;
+          line-height: 21px;
+          font: {
+            size: 13px;
+            weight: 500;
+          }
+          &:hover {
+            color: $titleColor;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -953,6 +1111,11 @@
       }
     }
   }
+
+  .sticky + .content {
+    padding-top: 80px;
+  }
+
   .testimonials {
     .testimonial {
       flex: 0 0 44% !important;
@@ -1032,7 +1195,10 @@
       }
     }
   }
-  
+  .sticky + .content {
+    padding-top: 0px;
+  }
+
   .navbar.navbar-light {
     .navbar-collapse {
       position: absolute;
@@ -1189,6 +1355,44 @@
       margin: 0 !important;
     }
   }
+
+  .faq {
+    .question-card {
+      .question {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .question-answer {
+        font-size: 13px;
+        line-height: 23px;
+      }
+    }
+  }
+
+  
+.reviews-section {
+  .reviews-title {
+    border-bottom: 1px solid #F5F5F5;
+    .title {
+      color: $titleColor;
+      border-bottom: 3px solid $primaryColor;
+      font: {
+        size: 15px;
+        weight: 600;
+      }
+    }
+  }
+
+  .review {
+    .review-date {
+      margin: 15px 5px 0 !important;
+    }
+
+    .review-text {
+      margin: 15px 5px 0 !important;
+    }
+  }
+}
 }
 
 @media (max-width: 536px) {
