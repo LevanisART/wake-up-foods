@@ -1052,9 +1052,7 @@
   @media (min-width: 567px) {
     max-width: 500px;
     margin: 0 auto;
-    padding: 0;
   }
-  padding: 2rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1459,29 +1457,84 @@
   }
 
   
-.reviews-section {
-  .reviews-title {
-    border-bottom: 1px solid #F5F5F5;
-    .title {
-      color: $titleColor;
-      border-bottom: 3px solid $primaryColor;
-      font: {
-        size: 15px;
-        weight: 600;
+  .reviews-section {
+    .reviews-title {
+      border-bottom: 1px solid #F5F5F5;
+      .title {
+        color: $titleColor;
+        border-bottom: 3px solid $primaryColor;
+        font: {
+          size: 15px;
+          weight: 600;
+        }
+      }
+    }
+
+    .review {
+      .review-date {
+        margin: 15px 5px 0 !important;
+      }
+
+      .review-text {
+        margin: 15px 5px 0 !important;
       }
     }
   }
-
-  .review {
-    .review-date {
-      margin: 15px 5px 0 !important;
+  
+  .modal-dialog {
+    @media (min-width: 567px) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    .modal-content {
+      border-radius: 10px;
+      text-align: center;
+    }
+    .modal-title {
+      font: {
+        size: 13px;
+        weight: 500;
+      }
+    }
+    .modal-title-big {
+      font: {
+        size: 24px;
+        weight: 600;
+      }
+      color: $titleColor;
+    }
+    .font-medium {
+      font-weight: 500;
+    }
+    .modal-description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .input-group {
+      input {
+        border: 1px solid #F5F5F5;
+        font-size: 13px;
+      }
     }
 
-    .review-text {
-      margin: 15px 5px 0 !important;
+    .claim-offer label {
+      font-size: 13px;
+    }
+
+    .close-modal {
+      color: $textColor;
+      font: {
+        size: 13px;
+        weight: 500;
+      }
+      text-decoration: underline;
     }
   }
-}
+
 }
 
 @media (max-width: 536px) {
