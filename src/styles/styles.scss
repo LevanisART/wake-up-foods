@@ -126,9 +126,6 @@
   background-color: $primaryColor;
   background-image: url('../images/section-top.png');
   background-size: cover;
-  @media (min-width: 1400px) {
-    background-position: center -70px;
-  }
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
@@ -154,10 +151,12 @@
   }
   .section-top-description {
     color: #FFF;
+    text-align: center;
     font: {
       size: 18px;
       weight: 500;
     }
+    line-height: 28px;
   }
   .btn-primary {
     a {
@@ -232,7 +231,7 @@
 
 
 .testimonials {
-  @media(min-width: 1200px) {
+  @media(min-width: 992px) {
     .col-lg-4 {
       flex: 0 0 30%;
       max-width: 30%;
@@ -268,7 +267,7 @@
 
 
 .why-waf {
-  @media(min-width: 1200px) {
+  @media(min-width: 992px) {
     .col-lg-3 {
       flex: 0 0 22%;
       max-width: 22%;
@@ -306,7 +305,7 @@
 
 
 .waffles {
-  @media(min-width: 1200px) {
+  @media(min-width: 992px) {
     .col-lg-3 {
       flex: 0 0 23%;
       max-width: 23%;
@@ -336,21 +335,399 @@
 }
 
 
+.compare table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  
+  th, td {
+    padding: 1.5rem 1rem;
+    border-top: none;
+    border-bottom: 1px solid #F5F5F5;
+    white-space: pre;
+    font: {
+      size: 15px;
+      weight: 500;
+    }
+    color: #8496AA;
+  }
 
+  .title {
+    color: $titleColor;
+    font: {
+      size: 15px;
+      weight: 600;
+    }
+  }
 
+  .primary {
+    color: $titleColor;
+  }
+  
+  thead th,
+  tbody td {
+    text-align: center;
+  }
+  
+  thead {
+    color: $titleColor;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+.value-reinforcement {
+  background: $primaryColor;
+  .section-title {
+    font: {
+      size: 26px;
+      weight: 700;
+    }
+    color: #FFF;
+  }
+  .btn-primary a {
+    color: #000;
+    &:hover {
+      color: #000;
+    }
+  }
+}
 
 
 .footer {
-  box-shadow: 0 -4px 4px rgba(221, 221, 221, .25);
-  .footer-info {
-    border-top: 1px solid #F4F4F8;
-    background: #FAFAFC;
-    span {
+  .footer-nav {
+    ul li a {
       color: #000;
-      font: {
-        size: 14px;
-      }
-      line-height: 23px;
+      font-size: 13px;
     }
+  }
+  .website-info span {
+    color: $textColor;
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .footer-title {
+    color: $titleColor;
+    font: {
+      size: 18px;
+      weight: 600;
+    }
+  }
+  .footer-description {
+    color: $textColor;
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .input-group {
+    input {
+      border: 1px solid #F5F5F5;
+      font-size: 13px;
+    }
+  }
+  .follow {
+    .title {
+      color: $titleColor;
+      font-size: 15px;
+    }
+    .social a {
+      background: #F3F3F3;
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  .section-top {
+    .company-logo {
+      img {
+        width: 270px;
+      }
+    }
+    .section-top-title {
+      font-size: 30px;
+      line-height: 50px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .section {
+    .section-title {
+      font: {
+        size: 22px;
+        weight: 600;
+      }
+    }
+    .section-description {
+      font-size: 14px;
+    }
+  }
+
+  .trust-reinforcement {
+    .icons {
+      width: 28%;
+    }
+    .section-img {
+      width: 33%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .logo-section {
+    .logo {
+      svg {
+        width: auto !important;
+        height: 30px !important;
+      }
+    }
+  }
+  .testimonials {
+    .testimonial {
+      flex: 0 0 44% !important;
+      max-width: 44% !important;
+      margin-bottom: 6rem !important;
+      margin-left: 3%;
+      margin-right: 3%;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .why-waf {
+    .feature {
+      flex: 0 0 44% !important;
+      max-width: 44% !important;
+      margin-bottom: 6rem !important;
+      margin-left: 3%;
+      margin-right: 3%;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .waffles {
+    .waffle {
+      flex: 0 0 44% !important;
+      max-width: 44% !important;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+
+  .trust-reinforcement {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    .icons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0;
+    }
+    .section-img {
+      width: 100%;
+      margin: 0 !important;
+    }
+  }
+
+  .value-reinforcement {
+    .section-title {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .btn-primary a {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  .footer-sections {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .logo-section {
+    .logo {
+      svg {
+        width: auto !important;
+        height: 25px !important;
+      }
+    }
+  }
+
+  .navbar-icons {
+    position: relative !important;
+  }
+
+  .testimonials {
+    .testimonial {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+      margin-bottom: 6rem !important;
+      margin-left: 0;
+      margin-right: 0;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .logo-section {
+    padding: 0 !important;
+    .logo {
+      padding: 1rem 2rem 1rem 0;
+      a {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      svg {
+        width: auto !important;
+        max-height: 35px !important;
+      }
+    }
+  }
+  .section-top {
+    .company-logo {
+      img {
+        width: 230px;
+      }
+    }
+    .section-top-title {
+      font-size: 25px;
+      line-height: 37px;
+      padding: 10px;
+      margin-top: .5rem!important;
+    }
+    .section-top-description {
+      font-size: 16px;
+    }
+  }
+
+  .section {
+    .section-title {
+      font: {
+        size: 20px;
+      }
+      line-height: 30px;
+    }
+    .section-description {
+      font-size: 13px;
+    }
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .navbar.navbar-light {
+    .navbar-collapse {
+      position: absolute;
+      top: 55px;
+      right: 0;
+      z-index: 1;
+      background: #FFF;
+      min-width: 160px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    }
+    .nav-item {
+      margin-left: 0;
+      width: 100%;
+      border-bottom: 1px solid #f2f2f2;
+      .nav-link {
+        padding: 20px !important;
+        width: 100%;
+        text-align: center;
+      }
+      &.btn-primary {
+        background-color: transparent;
+        border-color: transparent;
+        .nav-link {
+          padding: 20px !important;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    &.animated {
+      animation-duration: 0s;
+    }
+  }
+  
+  .testimonials {
+    .testimonial {
+      flex: 0 0 80% !important;
+      max-width: 80% !important;
+      margin-bottom: 6rem !important;
+      margin-left: 0;
+      margin-right: 0;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .why-waf {
+    .feature {
+      flex: 0 0 80% !important;
+      max-width: 80% !important;
+      margin-bottom: 6rem !important;
+      margin-left: 3%;
+      margin-right: 3%;
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 6rem !important;
+      }
+    }
+  }
+
+  .waffles {
+    .waffle {
+      flex: 0 0 80% !important;
+      max-width: 80% !important;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+
+  .trust-reinforcement {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    .icons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0;
+    }
+    .section-img {
+      width: 100%;
+      margin: 0 !important;
+    }
+  }
+}
+
+@media(max-width: 536px) {
+  .topbar .offer-button {
+    margin-top: 1.5rem !important;
   }
 }

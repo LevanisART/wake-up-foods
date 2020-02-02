@@ -15,7 +15,7 @@
       <header class="header">
         <div class="topbar py-3">
           <div class="container">
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center flex-wrap">
               <span>Today Only 1 FREE Box !</span>
               <span class="ml-4">8 : 20 : 54</span>
               <div class="offer-button ml-5 my-1">
@@ -24,8 +24,8 @@
             </div>
           </div>
         </div>
-        <div class="container d-flex justify-content-center my-4 position-relative">
-          <nav class="navbar navbar-expand-sm p-0 navbar-light">
+        <div class="container d-flex justify-content-between justify-content-md-center align-items-center my-4 position-relative">
+          <nav class="navbar navbar-expand-md p-0 navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,7 +35,7 @@
                 <li class="nav-item">
                   <a class="nav-link p-0" href="#">Shop Now</a>
                 </li>
-                <div class="logo">
+                <div class="logo d-none d-md-flex">
                   <a href="#"><img src="images/logo.svg" alt=""></a>
                 </div>
                 <li class="nav-item">
@@ -44,6 +44,10 @@
               </ul>
             </div>
           </nav>
+
+          <div class="logo d-md-none d-flex">
+            <a href="#"><img src="images/logo.svg" alt=""></a>
+          </div>
 
           <div class="navbar-icons d-flex position-absolute h-100 align-items-center">
             <div class="user-panel">
@@ -59,8 +63,8 @@
       <main class="content">
         <div class="section-top">
           <div class="d-flex justify-content-center align-items-center h-100 py-5">
-            <div class="col-12 py-5 col-md-5 d-flex flex-column align-items-center justify-content-center">
-              <h1 class="section-top-title animated fadeInUp">The World’s First <br/> Gluten-Free, High-Protein, Plant-Based Waffles</h1>
+            <div class="col-10 py-lg-4 py-xl-5 col-sm-8 col-md-6 col-lg-5 col-xl-4 d-flex flex-column align-items-center justify-content-center">
+              <h1 class="section-top-title w-100 animated fadeInUp">The World’s First <br/> Gluten-Free, High-Protein, Plant-Based Waffles</h1>
               <p class="section-top-description my-4">Vegan. Dairy, Nut & Soy Free. Only 6-9 ingredients.</p>
               <div class="btn-primary mt-3 bg-white d-flex"><a class="py-3 px-5 mx-4 my-1" href="#">Try It Now</a></div>
             </div>
@@ -69,7 +73,7 @@
 
         <div class="sections">
           <div class="section logo-section py-5">
-            <div class="container d-flex align-items-center justify-content-between py-2">
+            <div class="container d-flex align-items-center justify-content-start justify-content-sm-between flex-wrap py-2">
               <div class="logo">
                 <a class="py-4 pr-3" href="#">
                   <svg width="123" height="42" viewBox="0 0 123 42" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M0 4.66667V9.33334H2.54545H5.09091L5.00606 20.8727L4.87879 32.4546L2.46061 32.5818L0 32.7091V36.9091V41.1515H14.2121H28.4242V36.9091V32.7091L25.7939 32.5818L23.1212 32.4546V21V9.54546L25.7939 9.41819L28.4242 9.29092V4.66667V8.54207e-06H14.2121H0V4.66667Z" fill="#BABACE"/><path d="M30.5454 13.9576V18.2L32.3697 18.3273L34.1515 18.4545V25.4545V32.4545L32.3697 32.5818L30.5454 32.7091V36.9515V41.1515H41.5757H52.606V36.9515V32.7091L50.6121 32.5818L48.5757 32.4545L48.4485 27.7879C48.3212 24.0121 48.4485 22.8667 49.0424 21.7212C50.697 18.6242 55.5757 17.5212 57.8242 19.7697C59.2242 21.1697 59.4788 22.4424 59.3091 28L59.1818 32.4545L57.0606 32.5818L54.9394 32.7091V36.9091V41.1515H65.8848H76.7879V37.1212C76.7879 32.9212 77.1697 32.2 78.2303 34.2364C80.606 38.8182 87.8182 42 95.7939 42C101.988 42 107.079 40.303 109.752 37.3758C111.024 35.9758 112.848 32.3273 112.848 31.097C112.848 30.2061 112.679 30.1636 107.121 30.0364L101.436 29.9091L100.758 31.6061C99.9939 33.6848 98.297 34.7879 95.8788 34.7879C93.4606 34.7879 91.4242 33.4727 90.703 31.4788C89.9394 29.2727 89.9818 21.7636 90.7879 20.1939C92.2727 17.2667 96.0909 16.2909 98.6788 18.1152C99.7394 18.8788 100.164 19.6424 100.63 21.5091C100.97 22.8667 101.394 23.9697 101.606 23.9697C103.43 23.8848 110.77 23.2485 111.703 23.0788C112.848 22.8242 112.891 22.7394 112.636 21.297C112.255 19.3455 110.685 16.2485 109.242 14.7212C106.4 11.7091 101.903 10.097 96.303 10.0121C87.1394 9.88485 79.3333 14 76.9576 20.1515C76.0667 22.4424 75.8545 27.6182 76.4909 30.8424L76.8727 32.6667H75.1757H73.4788L73.3091 25.3273C73.1818 18.1152 73.1394 17.903 71.9091 15.4424C70.806 13.2788 70.297 12.7697 68.1333 11.7091C66.0545 10.6485 65.0788 10.3939 61.7697 10.2667C59.0545 10.1394 57.2303 10.3091 55.703 10.7333C53.2 11.497 49.8909 13.5758 49.2121 14.8485C48.3636 16.4182 47.9394 15.697 47.9394 12.7273V9.75758H39.2424H30.5454V13.9576Z" fill="#BABACE"/><path d="M115.564 31.8182C114.079 32.4121 112.424 34.7454 112.424 36.2303C112.424 38.1818 114.036 40.3879 115.903 41.0242C119.933 42.3394 123.624 38.5212 122.012 34.6606C120.951 32.1151 118.024 30.8 115.564 31.8182Z" fill="#BABACE"/></g><defs><clipPath id="clip0"><rect width="122.606" height="42" fill="white"/></clipPath></defs></svg>
@@ -107,7 +111,7 @@
             <div class="container my-2">
               <h2 class="section-title text-center animated fadeInDown">People Are Munching With Us</h2>
               <div class="testimonials mt-5 mb-4 d-flex">
-                <div class="row justify-content-between mt-5 pt-5">
+                <div class="row justify-content-center justify-content-lg-between mt-5 pt-2 pt-md-5">
 
                   <div class="testimonial px-0 col-sm-9 col-md-6 col-lg-4 mb-4 mb-lg-0 animated fadeInLeft">
                     <div class="d-flex flex-column align-items-center justify-content-between h-100 px-4">
@@ -144,14 +148,14 @@
           </div>
           
           
-          <div class="section my-5 py-5">
+          <div class="section my-5 py-md-5">
             <div class="container my-2">
               <h2 class="section-title text-center animated fadeInDown">Why Wake Up Foods?</h2>
               <div class="why-waf mt-5 mb-4 d-flex">
-                <div class="row justify-content-between mt-5 pt-5 w-100">
+                <div class="d-flex flex-wrap justify-content-center justify-content-sm-between mt-5 pt-4 pt-md-5">
 
                   <div class="feature px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 px-4">
+                    <div class="d-flex flex-column align-items-center h-100 px-4">
                       <div class="feature-icon rounded-pill overflow-hidden d-flex justify-content-center align-items-center mt-n5">
                         <img src="images/blank-icon.svg" alt="">
                       </div>
@@ -161,7 +165,7 @@
                   </div>
 
                   <div class="feature px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 px-4">
+                    <div class="d-flex flex-column align-items-center h-100 px-4">
                       <div class="feature-icon rounded-pill overflow-hidden d-flex justify-content-center align-items-center mt-n5">
                         <img src="images/blank-icon.svg" alt="">
                       </div>
@@ -171,7 +175,7 @@
                   </div>
 
                   <div class="feature px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 px-4">
+                    <div class="d-flex flex-column align-items-center h-100 px-4">
                       <div class="feature-icon rounded-pill overflow-hidden d-flex justify-content-center align-items-center mt-n5">
                         <img src="images/blank-icon.svg" alt="">
                       </div>
@@ -181,7 +185,7 @@
                   </div>
 
                   <div class="feature px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 px-4">
+                    <div class="d-flex flex-column align-items-center h-100 px-4">
                       <div class="feature-icon rounded-pill overflow-hidden d-flex justify-content-center align-items-center mt-n5">
                         <img src="images/blank-icon.svg" alt="">
                       </div>
@@ -200,15 +204,13 @@
           </div>
 
 
-
           <div class="section my-5 py-5">
-            <div class="container my-2">
-              <h2 class="section-title text-center animated fadeInDown">Why Wake Up Foods?</h2>
-              <div class="waffles mt-5 mb-4 d-flex">
-                <div class="row justify-content-between mt-5 pt-5 w-100">
+            <div class="container mb-5">
+              <div class="waffles d-flex">
+                <div class="d-flex justify-content-center justify-content-sm-between flex-wrap w-100">
 
                   <div class="waffle py-4 px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-5">
+                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-4 px-xl-5">
                       <div class="waffle-img d-flex justify-content-center">
                         <img src="images/waffles/berry.png" alt="">
                       </div>
@@ -220,7 +222,7 @@
                   </div>
 
                   <div class="waffle py-4 px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-5">
+                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-4 px-xl-5">
                       <div class="waffle-img d-flex justify-content-center">
                         <img src="images/waffles/cinnamon.png" alt="">
                       </div>
@@ -232,7 +234,7 @@
                   </div>
 
                   <div class="waffle py-4 px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-5">
+                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-4 px-xl-5">
                       <div class="waffle-img d-flex justify-content-center">
                         <img src="images/waffles/classic.png" alt="">
                       </div>
@@ -244,7 +246,7 @@
                   </div>
 
                   <div class="waffle py-4 px-0 col-sm-9 col-md-6 col-lg-3 mb-4 mb-lg-0 animated fadeInLeft">
-                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-5">
+                    <div class="d-flex flex-column align-items-center justify-content-between h-100 py-3 px-4 px-xl-5">
                       <div class="waffle-img d-flex justify-content-center">
                         <img src="images/waffles/cocoa.png" alt="">
                       </div>
@@ -262,14 +264,83 @@
           </div>
 
 
-          <div class="section my-5 py-5 light-bg">
-            <div class="container my-2">
-              <div class="d-flex justify-content-center">
+          <div class="section my-5 py-2 py-lg-5 light-bg">
+            <div class="container my-5">
+              <div class="trust-reinforcement d-flex align-items-center justify-content-between">
+                <div class="icons bg-white rounded-lg py-3 px-4">
+                  <img class="img-fluid" src="images/icons1.png" alt="">
+                </div>
+
+                <div class="section-img mx-4">
+                  <img src="images/waffle.png" alt="">
+                </div>
+
+                <div class="icons bg-white rounded-lg py-3 px-4">
+                  <img class="mx-3 img-fluid" src="images/icons2.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="section my-5 py-5">
+            <div class="container my-5">
+              <h2 class="section-title text-center animated fadeInDown">The Facts Speak For Themselves:</h2>
+              
+              <div class="compare mt-5 mb-4 d-flex">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <td></td>
+                        <th class="pb-3"><img src="images/logo.svg" alt=""></th>
+                        <th class="title">Other Cereals*</th>
+                        <th class="title">Average Protein Bar*</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="title">CARBS:</th>
+                        <td class="primary">3g</td>
+                        <td>17g</td>
+                        <td>13g</td>
+                      </tr>
+                       <tr>
+                        <th class="title">PROTEIN:</th>
+                        <td class="primary">16g</td>
+                        <td>2g</td>
+                        <td>14g</td>
+                      </tr>
+                       <tr>
+                        <th class="title">SUGAR:</th>
+                        <td class="primary">0g</td>
+                        <td>22g</td>
+                        <td>12g</td>
+                      </tr>
+                       <tr>
+                        <th class="title">CALORIES:</th>
+                        <td class="primary">100 Cal</td>
+                        <td>320 Cal</td>
+                        <td>210 Cal</td>
+                      </tr>
+                    <tbody>
+                  </table>
+                </div>
 
               </div>
             </div>
           </div>
           
+
+          <div class="section value-reinforcement my-5 py-5">
+            <div class="container my-1">
+              <div class="d-flex align-items-center justify-content-center justify-content-sm-between flex-wrap">
+                <h2 class="section-title animated fadeInDown col-12 col-sm-6 col-md-9 px-0 text-sm-left text-center mb-4 mb-sm-0">Low Carb. High Protein. Freaking DELICIOUS!</h2>
+                <div class="btn-primary bg-white d-flex"><a class="py-3 px-5 mx-4 my-1" href="#">Try It Now</a></div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
       
@@ -279,17 +350,48 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='scripts/main.min.js'></script>
 
-    <footer class="footer">
-      <div class="container py-5 d-flex justify-content-center flex-wrap">
-        <div class="logo mt-n1 animated fadeIn">
-          <a class="p-4" href="#"><img src="images/logo.svg" alt=""></a>
+    <footer class="footer mb-5">
+      <div class="container footer-sections py-3 py-lg-5 d-flex align-items-center justify-content-between">
+        <div class="col-12 col-lg-7 px-0 d-flex flex-column align-items-lg-start align-items-center mb-5 mb-lg-0">
+          <div class="logo d-flex animated fadeIn">
+            <a class="py-4" href="#"><img src="images/logo.svg" alt=""></a>
+          </div>
+          <div class="footer-nav">
+            <ul class="d-flex">
+              <li class="mr-3"><a href="#">Terms of Use</a></li>
+              <li class="mr-3"><a href="#">Privacy Policy</a></li>
+              <li class="mr-3"><a href="#">FAQ</a></li>
+              <li class="mr-3"><a href="#">Contact</a></li>
+              <li class="mr-3"><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="website-info d-flex flex-column mt-4 text-lg-left text-center">
+            <span>hello@wakeupfoods.com</span>
+            <span>© 2020 Wake Up Foods</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-9 col-md-6 col-lg-4 px-0 d-flex flex-column align-items-lg-start align-items-center mt-4 mt-lg-0">
+          <h5 class="footer-title text-lg-left text-center">Never miss another deal!</h5>
+          <p class="footer-description mt-2 text-lg-left text-center">Plus exclusive promotions, be the first to hear about our brand new flavors and products.</p>
+
+          <div class="input-group my-3">
+            <input type="text" class="form-control py-4 px-3" placeholder="YOUR@EMAIL.COM" aria-label="YOUR@EMAIL.COM">
+            <div class="input-group-append">
+              <a href="#" class="btn-primary input-group-text px-4"><span class="mx-2">Join Us</span></a>
+            </div>
+          </div>
+
+          <div class="follow d-flex align-items-center mt-2">
+            <div class="title mr-4">Follow us here</div>
+            <div class="social mr-3"><a class="p-3 rounded-pill d-flex align-items-center justify-content-center" href="#"><img src="images/facebook.svg" alt=""></a></div>
+            <div class="social mr-3"><a class="p-3 rounded-pill d-flex align-items-center justify-content-center" href="#"><img src="images/instagram.svg" alt=""></a></div>
+          </div>
+
         </div>
       </div>
-      <div class="footer-info py-3">
-        <div class="container my-1 d-flex justify-content-center flex-wrap animated fadeIn">
-          <span class="text-center">hello@wakeupfoods.com © 2020 Wake Up Foods | <a href="#">Privacy Policy</a></span>
-        </div>
-      </div>
+      
     </footer>
   </div>
 
