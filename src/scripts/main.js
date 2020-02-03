@@ -63,10 +63,6 @@ $(document).ready(function(){
   });
 });
 
-$('input').click(function () {
-  $dialog.html("<br /><a id='modalClose'>CloseMe</a>");
-  $dialog.dialog('open');
-});
 // Bind the click event that closes the modal
 $("body").on('click', '#modalClose', function (e) {
     // prevent the default action, e.g., following a link

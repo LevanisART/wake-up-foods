@@ -154,7 +154,7 @@
   }
   .section-top-title {
     color: #FFF;
-    font-size: 44px;
+    font-size: 35px;
     font-weight: 700;
     padding: 0 30px;
     width: 100%;
@@ -162,14 +162,12 @@
       width: 620px;
       padding: 0;
     }
-    text-align: center;
     line-height: 60px;
   }
   .section-top-description {
     color: #FFF;
-    text-align: center;
     font: {
-      size: 18px;
+      size: 17px;
       weight: 500;
     }
     line-height: 28px;
@@ -181,6 +179,12 @@
         weight: 600;
       }
       color: #000;
+    }
+  }
+
+  .section-image {
+    img {
+      max-width: 670px;
     }
   }
 }
@@ -347,6 +351,17 @@
       font-size: 14px;
       margin-bottom: 1rem;
     }
+  }
+}
+
+
+.section-img {
+  max-height: 462px;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -1095,12 +1110,13 @@
 .ui-dialog-titlebar.ui-widget-header {
   border: none;
   background: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.25rem 1rem;
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
+  position: relative;
   margin: 0;
   padding: 1px;
   background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12.5' cy='12.5' r='12.5' fill='%236F83A0'/%3E%3Crect x='16.0356' y='7.19669' width='2.5' height='12.5' rx='1.25' transform='rotate(45 16.0356 7.19669)' fill='white'/%3E%3Crect x='7.19629' y='8.96445' width='2.5' height='12.5' rx='1.25' transform='rotate(-45 7.19629 8.96445)' fill='white'/%3E%3C/svg%3E%0A");
@@ -1196,8 +1212,10 @@
     .section-top-title {
       font-size: 30px;
       line-height: 50px;
-      br {
-        display: none;
+    }
+    .section-image {
+      img {
+        max-width: 100%;
       }
     }
   }
@@ -1228,6 +1246,12 @@
 }
 
 @include media-breakpoint-down(md) {
+  .section-top {
+    br {
+      display: none;
+    }
+  }
+
   .logo-section {
     .logo {
       svg {
