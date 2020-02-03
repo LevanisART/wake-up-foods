@@ -356,7 +356,10 @@
 
 
 .section-img {
-  max-height: 462px;
+  @media(min-width: 1200px) {
+    max-width: 414px;
+    max-height: 462px;
+  }
   border-radius: 10px;
   img {
     width: 100%;
