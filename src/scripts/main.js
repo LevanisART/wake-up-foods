@@ -9,7 +9,6 @@
 
  window.onscroll = function() {
   myFunction();
-  myFunction2();
 }
 
 var header = document.getElementById("header");
