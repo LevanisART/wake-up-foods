@@ -1079,6 +1079,14 @@
       weight: 500;
     }
   }
+  .logo a {
+    outline: none;
+    border: none;
+    &::focus {
+      outline: none;
+      border: none;
+    }
+  }
   .modal-title-big {
     font: {
       size: 28px;
@@ -1119,7 +1127,7 @@
   background: none;
   display: flex;
   justify-content: flex-end;
-  padding: 1.25rem 1rem;
+  padding: 1.25rem 1rem 0;
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
@@ -1163,7 +1171,6 @@
     border: none;
   }
 }
-
 
 .footer {
   .footer-nav {
@@ -1627,5 +1634,32 @@
 @media (max-width: 320px) {
   .header .logo {
     display: none !important;
+  }
+}
+
+
+
+
+@media(max-width: 400px) {
+  .dialog {
+    .modal-title {
+      font: {
+        size: 13px;
+      }
+    }
+    .modal-title-big {
+      font: {
+        size: 23px;
+      }
+    }
+    .modal-description {
+      font-size: 13px;
+      line-height: 23px;
+    }
+    .btn-primary {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
