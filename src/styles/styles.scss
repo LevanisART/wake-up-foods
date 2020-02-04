@@ -1258,42 +1258,34 @@
   }
 
   .trust-reinforcement {
-    flex-wrap: wrap;
-    justify-content: center !important;
     .icons {
-      width: 100%;
       display: flex;
       justify-content: center;
-      margin: 0 0 3rem;
+      width: 100%;
+      margin: 0;
+      padding: 0 !important;
       .icon {
         width: 150px;
-        margin: 15px 0;
+        margin: 15px;
       }
       .icons-list {
         width: 100%;
+        justify-content: center;
       }
       .icons-list-inner {
         display: flex;
         justify-content: center;
       }
     }
+    .icon-inner {
+      width: unset !important;
+      padding: 0 !important;
+    }
     .section-img {
-      width: 70%;
-      margin: 0 !important;
+      width: 75%;
+      margin: 3rem 0 !important;
     }
   }
-
-  // .trust-reinforcement {
-  //   .icons {
-  //     width: 28%;
-  //   }
-  //   .section-img {
-  //     width: 33%;
-  //     img {
-  //       width: 100%;
-  //     }
-  //   }
-  // }
 }
 
 @include media-breakpoint-down(md) {
@@ -1543,17 +1535,31 @@
   }
 
   .trust-reinforcement {
-    flex-wrap: wrap;
-    justify-content: center !important;
-    .icons {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin: 3rem 0;
+    .icons .icon {
+      width: 120px;
+      margin: 10px;
     }
     .section-img {
       width: 100%;
       margin: 0 !important;
+    }
+  }
+  
+  .compare table {
+    th, td {
+      font: {
+        size: 13px;
+      }
+    }
+
+    .title {
+      font: {
+        size: 13px;
+      }
+    }
+
+    thead {
+      font-size: 13px;
     }
   }
 
@@ -1674,8 +1680,14 @@
   }
 }
 
-
-
+@media (max-width: 350px) {
+  .trust-reinforcement {
+    .icons .icon {
+      width: 150px;
+      margin: 10px;
+    }
+  }
+}
 
 @media(max-width: 400px) {
   .dialog {
