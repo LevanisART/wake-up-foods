@@ -370,7 +370,7 @@
 
 
 .section-img {
-  width: 36%;
+  width: 34%;
   border-radius: 60px;
   img {
     width: 100%;
@@ -1654,8 +1654,10 @@
 }
 
 @media (max-width: 536px) {
-  .topbar .offer-button {
-    margin-top: 1.5rem !important;
+  .topbar {
+    span {
+      text-align: center;
+    }
   }
 }
 
