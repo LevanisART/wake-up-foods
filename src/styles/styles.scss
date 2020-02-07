@@ -143,8 +143,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  @media(min-width: 450px) and (max-width: 767px) {
+    padding-bottom: 150px;
+    margin-bottom: 150px;
+  }
   &::before {
     content: '';
+    background: url('../images/hero-section-waffle2.png')no-repeat left bottom;
+    @media(max-width: 1600px) {
+      background-size: 250px;
+    }
+    @media(max-width: 992px) {
+      background: none;
+    }
     position: absolute;
     top: 0;
     width: 100%;
@@ -152,7 +163,7 @@
   }
   .section-top-title {
     color: #FFF;
-    font-size: 35px;
+    font-size: 42px;
     font-weight: 700;
     padding: 0 30px;
     width: 100%;
@@ -160,7 +171,7 @@
       width: 620px;
       padding: 0;
     }
-    line-height: 50px;
+    line-height: 56px;
   }
   .section-top-description {
     color: #FFF;
@@ -183,6 +194,15 @@
   .section-image {
     img {
       max-width: 670px;
+    }
+    @media(max-width: 767px) {
+      position: absolute;
+      bottom: -150px;
+      img {
+        max-width: 320px !important;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .12);
+        border-radius: 100rem;
+      }
     }
   }
 }
@@ -1670,6 +1690,9 @@
       font-size: 22px;
       line-height: 33px;
       padding: 0;
+    }
+    .section-image {
+      display: none !important;
     }
   }
   .header {
