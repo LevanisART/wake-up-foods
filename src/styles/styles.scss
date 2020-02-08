@@ -212,8 +212,9 @@
     color: $titleColor;
     line-height: 42px;
     font: {
-      size: 28px;
-      weight: 600;
+      family: 'Quicksand';
+      size: 30px;
+      weight: 700;
     }
   }
   .section-description {
@@ -247,6 +248,8 @@
 
 .light-bg {
   background: $lightBg;
+  border-top: 1px solid #FFE0D0;
+  border-bottom: 1px solid #FFE0D0;
 }
 
 
@@ -312,7 +315,6 @@
     }
   }
   .feature {
-    border: 1px solid #F3F3F3;
     padding-bottom: 10px;
     .feature-icon {
       width: 91px;
@@ -320,7 +322,7 @@
       position: absolute;
       background: #F6F6F6;
       img {
-        height: 28px;
+        height: 39px;
       }
     }
     .feature-title {
@@ -338,6 +340,149 @@
       font-size: 14px;
       margin-bottom: 1rem;
     }
+  }
+}
+
+.will-my-kids-eat-it {
+  height: 687px;
+  .section-title {
+    font-size: 35px;
+  }
+  .section-info {
+    .section-text {
+      color: #132152;
+      font: {
+        size: 18px;
+        family: 'Quicksand';
+        weight: 400;
+      }
+      line-height: 34px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../images/waffles-kid1.png");
+      background-size: 100%;
+      height: 687px;
+      width: 436px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: url("../images/waffles-kid2.png");
+      background-size: 100%;
+      height: 687px;
+      width: 545px;
+    }
+  }
+
+  @media(max-width: 1740px) {
+    height: 551px;
+    .section-info {
+      &::before {
+        width: 350px;
+        height: 551px;
+      }
+      &::after {
+        width: 438px;
+        height: 551px;
+      }
+    }
+  }
+
+  @media(max-width: 1740px) {
+    height: 551px;
+    .section-info {
+      &::before {
+        width: 350px;
+        height: 551px;
+      }
+      &::after {
+        width: 438px;
+        height: 551px;
+      }
+    }
+  }
+
+  @media(max-width: 1530px) {
+    height: 520px;
+    .section-info {
+      align-items: center;
+      &::before {
+        width: 272px;
+        height: 430px;
+        top: unset;
+      }
+      &::after {
+        width: 341px;
+        height: 430px;
+        top: unset;
+      }
+    }
+  }
+
+  @media(max-width: 1340px) {
+    height: 520px;
+    .section-title {
+      font-size: 32px;
+    }
+    .section-info {
+      align-items: center;
+      &::before {
+        width: 241px;
+        height: 380px;
+        top: unset;
+      }
+      &::after {
+        width: 300px;
+        height: 378px;
+        top: unset;
+      }
+    }
+  }
+
+  @media(max-width: 1250px) {
+    height: 520px;
+    .section-title {
+      font-size: 32px;
+    }
+    .section-info {
+      align-items: center;
+      &::before {
+        width: 196px;
+        height: 308px;
+        top: unset;
+      }
+      &::after {
+        width: 245px;
+        height: 308px;
+        top: unset;
+      }
+    }
+  }
+
+  @media(max-width: 992px) {
+    height: auto;
+    .section-info {
+      align-items: center;
+      &::before {
+        content: none;
+      }
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.section-row {
+  .section-description {
+    color: #606084;
+    font-size: 15px;
   }
 }
 
@@ -372,7 +517,17 @@
   }
 }
 
+
 .trust-reinforcement {
+  .section-img {
+    width: 34%;
+    border-radius: 60px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
   .icons {
     width: 32%;
   }
@@ -393,12 +548,8 @@
 
 
 .section-img {
-  width: 34%;
-  border-radius: 60px;
   img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 }
 
@@ -1221,8 +1372,9 @@
   .footer-title {
     color: $titleColor;
     font: {
-      size: 18px;
-      weight: 600;
+      family: 'Quicksand';
+      size: 20px;
+      weight: 700;
     }
   }
   .footer-description {
@@ -1277,6 +1429,13 @@
     }
     .section-description {
       font-size: 14px;
+    }
+  }
+
+  
+  .section-row {
+    .section-img {
+      order: 2;
     }
   }
 
