@@ -145,7 +145,7 @@
   position: relative;
   @media(min-width: 450px) and (max-width: 767px) {
     padding-bottom: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 175px;
   }
   &::before {
     content: '';
@@ -233,13 +233,15 @@
 .logo-section {
   border-bottom: 1px solid #F3F3F3;
   .logo {
+    transition: 0.2s;
     a {
-      svg path {
+      img {
         transition: 0.2s;
+        opacity: .6;
       }
       &:hover {
-        svg path {
-          fill: #8D8DA5;
+        img {
+          opacity: 1;
         }
       }
     }
@@ -1479,7 +1481,7 @@
 
   .logo-section {
     .logo {
-      svg {
+      img {
         width: auto !important;
         height: 30px !important;
       }
@@ -1563,7 +1565,7 @@
 @include media-breakpoint-down(sm) {
   .logo-section {
     .logo {
-      svg {
+      img {
         width: auto !important;
         height: 25px !important;
       }
