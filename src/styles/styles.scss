@@ -138,10 +138,38 @@
   flex: 1;
 }
 
+.btn-cta {
+  border-radius: 10px;
+  padding: 22px 45px 24px;
+  background: #F24C00;
+  color: #FFF;
+  font-size: 15px;
+  box-shadow: 0 5px 15px rgba(242, 76, 0, .5);
+  font-weight: 600;
+  svg {
+    * {
+      fill: #FFF;
+    }
+  }
+  &:hover {
+    color: #FFF;
+  }
+  &.bg-white {
+    color: #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    svg {
+      * {
+        fill: #000 !important;
+      }
+    }
+  }
+}
+
 .section-top {
-  background-image: url("../images/section-background.jpg");
+  background-image: url("../images/hero-section-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   @media(min-width: 450px) and (max-width: 767px) {
     padding-bottom: 150px;
@@ -149,13 +177,7 @@
   }
   &::before {
     content: '';
-    background: url('../images/hero-section-waffle2.png')no-repeat left bottom;
-    @media(max-width: 1600px) {
-      background-size: 250px;
-    }
-    @media(max-width: 992px) {
-      background: none;
-    }
+    background: linear-gradient(to right, rgba(112,54,0,.9) 30%,rgba(85,51,0,.015) 70%);
     position: absolute;
     top: 0;
     width: 100%;
@@ -163,10 +185,20 @@
   }
   .section-top-title {
     color: #FFF;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 700;
     padding: 0 30px;
     width: 100%;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30%;
+      height: 4px;
+      background: #FFF;
+      bottom: -25px;
+      left: 2px;
+    }
     @media(min-width: 700px) {
       width: 620px;
       padding: 0;
@@ -220,6 +252,7 @@
   .section-description {
     color: $textColor;
     font-size: 16px;
+    font-weight: 500;
     line-height: 29px;
   }
   .section-subtitle {
@@ -332,12 +365,12 @@
       margin-top: 3rem;
       font: {
         size: 17px;
-        weight: 500;
+        weight: 600;
       }
       line-height: 26px;
     }
     .feature-description {
-      color: #8496AA;
+      color: $textColor;
       line-height: 27px;
       font-size: 14px;
       margin-bottom: 1rem;
@@ -515,6 +548,13 @@
       line-height: 27px;
       font-size: 14px;
       margin-bottom: 1rem;
+    }
+    .btn-cta {
+      border-radius: 5px;
+      font-size: 13px;
+      span {
+        margin-top: -1px;
+      }
     }
   }
 }
