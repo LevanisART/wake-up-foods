@@ -9,6 +9,7 @@
 
 .header {
   background: #FFF;
+  z-index: 11;
 }
 
 .topbar {
@@ -43,14 +44,14 @@
   border-bottom: 1px solid #F0EFF2;
 }
 
-.sticky .header-navbar {
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
 .sticky + .content {
-  padding-top: 107px;
+  padding-top: 101px;
 }
 
 .navbar.navbar-light {
@@ -166,7 +167,12 @@
 }
 
 .section-top {
-  background-image: url("../images/hero-section-bg.jpg");
+  @media(min-width: 500px) {
+    background-image: url("../images/hero-section-bg.jpg");
+  }
+  @media(max-width: 500px) {
+    background-image: url("../images/hero-section-mobile.jpg");
+  }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1725,19 +1731,6 @@
 }
 
 @include media-breakpoint-down(md) {
-  .section-top {
-    &::before {
-      background: rgba(112,54,0,.75);
-    }
-    .section-top-title {
-      display: flex;
-      justify-content: center;
-      &::after {
-        left: unset;
-      }
-    }
-  }
-
   .logo-section {
     .logo {
       img {
@@ -1805,6 +1798,18 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .section-top {
+    &::before {
+      background: rgba(112,54,0,.75);
+    }
+    .section-top-title {
+      display: flex;
+      justify-content: center;
+      &::after {
+        left: unset;
+      }
+    }
+  }
   .logo-section {
     .logo {
       img {
@@ -1958,7 +1963,7 @@
 
   .trust-reinforcement {
     .icons .icon {
-      width: 120px;
+      width: 140px;
       margin: 10px;
     }
     .section-img {
