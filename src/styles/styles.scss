@@ -171,10 +171,6 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  @media(min-width: 450px) and (max-width: 767px) {
-    padding-bottom: 150px;
-    margin-bottom: 175px;
-  }
   &::before {
     content: '';
     background: linear-gradient(to right, rgba(112,54,0,.9) 30%,rgba(85,51,0,.015) 70%);
@@ -266,17 +262,9 @@
 .logo-section {
   border-bottom: 1px solid #F3F3F3;
   .logo {
-    transition: 0.2s;
-    a {
-      img {
-        transition: 0.2s;
-        opacity: .6;
-      }
-      &:hover {
-        img {
-          opacity: 1;
-        }
-      }
+    img {
+      transition: 0.2s;
+      opacity: .6;
     }
   }
 }
@@ -309,8 +297,10 @@
 .testimonials {
   @media(min-width: 992px) {
     .col-lg-4 {
-      flex: 0 0 30%;
-      max-width: 30%;
+      flex: 0 0 29%;
+      max-width: 29%;
+      margin-left: 2%;
+      margin-right: 2%;
     }
   }
   .testimonial {
@@ -1616,6 +1606,9 @@
 
 @include media-breakpoint-down(lg) {
   .section-top {
+    br {
+      display: none;
+    }
     .company-logo {
       img {
         width: 270px;
@@ -1684,8 +1677,15 @@
 
 @include media-breakpoint-down(md) {
   .section-top {
-    br {
-      display: none;
+    &::before {
+      background: rgba(112,54,0,.75);
+    }
+    .section-top-title {
+      display: flex;
+      justify-content: center;
+      &::after {
+        left: unset;
+      }
     }
   }
 
@@ -1826,16 +1826,16 @@
 @include media-breakpoint-down(xs) {
   .logo-section {
     padding: 0 !important;
-    overflow-x: scroll;
     .logo {
       padding: 1rem 2rem 1rem 0;
+      width: 50%;
       a {
         padding-left: 0 !important;
         padding-right: 0 !important;
       }
-      svg {
+      img {
         width: auto !important;
-        max-height: 35px !important;
+        height: 35px !important;
       }
     }
   }
