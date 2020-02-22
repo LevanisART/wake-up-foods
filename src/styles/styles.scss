@@ -276,23 +276,6 @@
 }
 
 
-.services {
-  .services-item {
-    .service-icon {
-      width: 55px;
-      height: 55px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
-    }
-    .service-title {
-      color: $textColor;
-      font: {
-        size: 18px;
-        weight: 500;
-      }
-    }
-  }
-}
-
 
 .testimonials {
   @media(min-width: 992px) {
@@ -344,6 +327,62 @@
   }
 }
 
+.ingredients-section {
+  position: relative;
+  background: url('../images/ingredients.png');
+  background-size: cover;
+  background-position: center;
+  @media(min-width: 1200px) {
+    .container {
+      max-width: 1180px;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(186, 99, 0, .96);
+  }
+  .section-title {
+    color: #FFF;
+    font-size: 39px;
+  }
+  .section-subtitle {
+    color: #FFF;
+    font: {
+      weight: 600;
+      size: 21px;
+      style: italic;
+    }
+  }
+  .ingredient {
+    @media(min-width: 1200px) {
+      max-width: 20%;
+      flex: 0 0 20%;
+    }
+    .ingredient-img {
+      width: 159px;
+      height: 159px;
+      border: 5px solid #FFF;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .ingredient-title {
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .ingredient-description {
+      font-size: 13px;
+      color: #ffebe0;
+      line-height: 28px;
+    }
+  }
+}
 
 .why-waf {
   @media(min-width: 992px) {
@@ -598,7 +637,7 @@
       left: 0;
       position: absolute;
       background-color: #14214E;
-      background-image: url("data:image/svg+xml,%3Csvg width='287' height='232' viewBox='0 0 287 232' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='283.596' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='252.544' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='221.492' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='190.441' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='159.388' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='128.337' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='97.2852' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='66.2333' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='283.596' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='252.544' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='221.492' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='190.441' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='159.388' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='128.337' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='97.2852' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='66.2333' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='283.596' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='252.544' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='221.492' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='190.441' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='159.388' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='128.337' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='97.2852' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='66.2333' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='283.596' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='252.544' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='221.492' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='190.441' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='159.388' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='128.337' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='97.2852' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='66.2333' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='283.596' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='252.544' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='221.492' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='190.441' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='159.388' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='128.337' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='97.2852' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='66.2333' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='283.596' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='252.544' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='221.492' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='190.441' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='159.388' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='128.337' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='97.2852' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='66.2333' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='283.596' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='252.544' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='221.492' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='190.441' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='159.388' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='128.337' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='97.2852' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='66.2333' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='33.6615' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13024' cy='4.15899' r='3.3963' fill='white'/%3E%3C/svg%3E%0A");
+      background-image: url("data:image/svg+xml,%3Csvg width='287' height='232' viewBox='0 0 287 232' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='35.1815' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1815' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='128.396' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13018' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='35.1863' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='128.401' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='4.13024' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3963' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3963' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3963' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3963' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3963' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3963' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4476' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3963' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='97.4524' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='66.3964' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='190.662' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='190.667' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='159.611' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='228.315' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='196.292' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='164.27' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='132.248' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='100.226' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='68.2034' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='252.448' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='283.396' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='36.1815' r='3.3963' fill='white'/%3E%3Ccircle cx='252.452' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='283.401' cy='4.15899' r='3.3963' fill='white'/%3E%3Ccircle cx='221.396' cy='4.15899' r='3.3963' fill='white'/%3E%3C/svg%3E%0A");
       background-repeat: no-repeat;
       @media (max-width: 1920px) {
         width: 445px;
