@@ -1676,6 +1676,16 @@
     }
   }
 
+  .ingredients-section {
+    .section-title {
+      font-size: 30px;
+    }
+    .section-subtitle {
+      font: {
+        size: 18px;
+      }
+    }
+  }
   
   .section-row {
     .section-img {
@@ -1904,6 +1914,18 @@
     }
     .section-description {
       font-size: 13px;
+    }
+  }
+
+  .ingredients-section {
+    .section-title {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-subtitle {
+      font: {
+        size: 18px;
+      }
     }
   }
 
