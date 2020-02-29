@@ -876,7 +876,7 @@
   background-position: center;
   .section-title {
     font: {
-      size: 26px;
+      size: 30px;
       weight: 700;
     }
     color: #FFF;
@@ -1711,6 +1711,12 @@
       font-size: 14px;
     }
   }
+  
+  .value-reinforcement {
+    .section-title {
+      font-size: 28px;
+    }
+  }
 
   .ingredients-section {
     .section-title {
@@ -1812,8 +1818,8 @@
 
   .value-reinforcement {
     .section-title {
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 26px;
+      line-height: 42px;
     }
     .btn-primary a {
       padding-left: 1.5rem !important;
@@ -2015,6 +2021,13 @@
 
     thead {
       font-size: 13px;
+    }
+  }
+  
+  .value-reinforcement {
+    .section-title {
+      font-size: 22px;
+      line-height: 34px;
     }
   }
 
