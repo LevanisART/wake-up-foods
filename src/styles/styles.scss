@@ -869,7 +869,11 @@
 }
 
 .value-reinforcement {
-  background: $primaryColor;
+  background-color: $primaryColor;
+  background-image: url('../images/waffle-bg2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   .section-title {
     font: {
       size: 26px;
