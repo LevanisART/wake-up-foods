@@ -107,3 +107,16 @@ window.onload = function () {
     }
   };
 };
+
+
+$('#ingredientModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var ingredient_image = button.data('ingredient_image')
+  var ingredient_title = button.data('ingredient_title')
+  var ingredient_info = button.data('ingredient_info')
+  
+  var modal = $(this)
+  modal.find('.ingredient-image img').attr("src", ingredient_image)
+  modal.find('.ingredient-title').text(ingredient_title)
+  modal.find('.ingredient-info').text(ingredient_info)
+})
