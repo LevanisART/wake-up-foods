@@ -185,11 +185,79 @@
           <div class="section my-5 pt-4 pb-4 py-sm-5">
             <div class="container my-5">
               <h2 class="section-title text-center animated fadeInDown">Real Superfood Ingredients</h2>
-              
-              <div class="ingredients mt-4 mt-sm-5 mb-4 d-flex justify-content-center animated fadeIn">
-                <div class="ingredient my-4">
+
+              <div class="modal p-0" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog mw-100 h-100 p-0 my-0" role="document">
+                  <div class="modal-content rounded-0 border-0 h-100">
+                    <div class="modal-header position-absolute w-100 border-0 p-5">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="25" cy="25" r="24" fill="white" stroke="black" stroke-width="2"/>
+                          <rect x="32.7764" y="15.0986" width="2.9996" height="25" rx="1.4998" transform="rotate(45 32.7764 15.0986)" fill="black"/>
+                          <rect x="15.1006" y="17.2208" width="3.00454" height="25" rx="1.50227" transform="rotate(-45 15.1006 17.2208)" fill="black"/>
+                        </svg>                          
+                      </button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                      <div class="product-ingredient border-0 col-12 col-md-5 col-lg-4 col-xl-3 p-4 d-flex flex-column align-items-center">
+                        <div class="ingredient-image rounded-pill mx-2">
+                          <div class="ingredient-image-inner d-flex justify-content-center align-items-center overflow-hidden">
+                            <img src="images/ingredients2/rolled-oats.png" alt="">
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start m-2 pl-1">
+                          <span class="ingredient-title my-3 py-1 text-center">Rolled Oats</span>
+                          <div class="ingredient-info text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id neque tincidunt aliquam nunc viverra ultrices a quis pellentesque. Nunc ut risus diam enim non mi duis sed viverra.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ingredients row mt-4 mt-sm-5 mb-4 d-flex justify-content-center justify-content-md-start animated fadeIn">
+
+                <div class="ingredient-column col-4">
+                  <div class="product-ingredient p-3 d-flex flex-wrap flex-sm-nowrap align-items-center my-4">
+                    <div class="ingredient-image rounded-pill mx-2">
+                      <div class="ingredient-image-inner d-flex justify-content-center align-items-center overflow-hidden">
+                        <img src="images/ingredients2/rolled-oats.png" alt="">
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-start m-2 pl-1">
+                      <span class="ingredient-title mb-2">Rolled Oats</span>
+                      <a class="learn-more" href="#" data-toggle="modal" data-target="#exampleModalCenter">Learn More +</a>
+                    </div>
+                  </div>
                 </div>
 
+                <div class="ingredient-column col-4">
+                  <div class="product-ingredient p-3 d-flex flex-wrap flex-sm-nowrap align-items-center my-4">
+                    <div class="ingredient-image rounded-pill mx-2">
+                      <div class="ingredient-image-inner d-flex justify-content-center align-items-center overflow-hidden">
+                        <img src="images/ingredients2/flax-seeds.png" alt="">
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-start m-2 pl-1">
+                      <span class="ingredient-title mb-2">Flax Seeds</span>
+                      <a class="learn-more" href="#" data-toggle="modal" data-target="#exampleModalCenter">Learn More +</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ingredient-column col-4">
+                  <div class="product-ingredient p-3 d-flex flex-wrap flex-sm-nowrap align-items-center my-4">
+                    <div class="ingredient-image rounded-pill mx-2">
+                      <div class="ingredient-image-inner d-flex justify-content-center align-items-center overflow-hidden">
+                        <img src="images/ingredients2/chia-seeds.png" alt="">
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-start m-2 pl-1">
+                      <span class="ingredient-title mb-2">Chia Seeds</span>
+                      <a class="learn-more" href="#" data-toggle="modal" data-target="#exampleModalCenter">Learn More +</a>
+                    </div>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -234,7 +302,7 @@
                   <img src="images/waffle.png" alt="">
                 </div>
 
-                <div class="icons animated fadeInLeft py-3 pl-4">
+                <div class="icons animated fadeInRight py-3 pl-4">
                   <div class="icons-list d-flex align-items-center flex-wrap">
                     <div class="icon-inner col-xl-6 d-flex justify-content-center flex-xl-column">
                       <div class="icon px-2 py-3 d-flex align-items-center flex-column">

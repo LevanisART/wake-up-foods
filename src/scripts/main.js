@@ -52,9 +52,6 @@ $(document).ready(function() {
   });
 });
 
-$('.modal').modal('show');
-
-
 var $dialog = $('#offer');
 
 $(document).ready(function(){
