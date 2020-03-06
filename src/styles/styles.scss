@@ -897,6 +897,20 @@
   }
 }
 
+
+.col-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+
 .compare .table2 {
   width: calc(100% - 1px);
   tbody tr th {
