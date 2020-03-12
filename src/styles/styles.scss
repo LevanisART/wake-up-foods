@@ -390,10 +390,9 @@
   }
 }
 
-
 .why-waf-section {
   position: relative;
-  background: url('../images/waffle-bg.jpg');
+  background: url('../images/waffle-bg.png');
   background-size: cover;
   background-position: center;
   @media(min-width: 1200px) {
@@ -407,7 +406,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(126, 61, 0, .8);
+    background: rgba(35,18,2,0.65);
   }
   .section-title {
     color: #FFF;
@@ -870,10 +869,13 @@
 
 .value-reinforcement {
   background-color: $primaryColor;
-  background-image: url('../images/image.jpg');
+  background-image: url('../images/image0.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 80% center;
+  @media(min-width: 1200px) {
+    background-position: center 30%;
+  }
   &::before {
     content: '';
     width: 100%;
