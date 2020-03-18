@@ -390,6 +390,39 @@
   }
 }
 
+.list-section {
+  .list-group-item {
+    color: #25283D;
+    font: {
+      size: 15px;
+      weight: 500;
+    }
+  }
+  .list-section-img {
+    img {
+      max-width: 100%;
+    }
+  }
+  @media(min-width: 991.98px) {
+    .list-section-img {
+      max-width: 394px;
+      flex: 0 0 394px;
+      height: 369px;
+      overflow: hidden;
+      border-radius: 105px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(-14deg);
+      img {
+        max-width: 430px;
+        object-fit: cover;
+        transform: rotate(14deg);
+      }
+    }
+  }
+}
+
 .why-waf-section {
   position: relative;
   background: url('../images/waffle-bg.png');
