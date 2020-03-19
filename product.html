@@ -76,10 +76,10 @@
             </div>
 
             <div class="add-product d-flex justify-content-end my-3 px-0 col-lg-6 col-xl-5">
-              <div class="input-counter py-3 col-4 px-1 d-flex align-items-center">
-                <span class="counter-btn minus"></span>
-                <input type="text" name="quantity" value="1" size="9999">
-                <span class="counter-btn plus"></span>
+              <div class="input-counter col-4 px-1 d-flex align-items-center mr-xl-2">
+                <span class="counter-btn minus-btn"></span>
+                <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector quantity-input">
+                <span class="counter-btn plus-btn"></span>
               </div>
 
               <div class="add-to-cart d-flex justify-content-center ml-3">
@@ -158,14 +158,17 @@
                   <span>$40.00</span>
                 </div>
 
-                <div class="add-product d-flex my-3 col-12 col-sm-8 col-lg-12 px-0">
-                  <div class="input-counter py-3 col-4 px-1 d-flex align-items-center">
-                    <span class="counter-btn minus"></span>
-                    <input type="text" name="quantity" value="1" size="9999">
-                    <span class="counter-btn plus"></span>
+                <div class="add-product d-flex align-items-end flex-wrap my-3 col-12 col-sm-8 col-lg-12 px-0">
+                  <div class="col-4 px-0 d-flex flex-column">
+                    <span class="quantity-title mb-3">Quantity</span>
+                    <div class="input-counter d-flex align-items-center">
+                      <span class="counter-btn py-3 minus-btn"></span>
+                      <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector quantity-input">
+                      <span class="counter-btn py-3 plus-btn"></span>
+                    </div>
                   </div>
 
-                  <div class="add-to-cart d-flex justify-content-center ml-3 col-8">
+                  <div class="add-to-cart d-flex justify-content-center pl-0 pl-md-4 col-8">
                     <a class="btn-primary py-3 px-5 d-flex w-100 d-flex justify-content-center" href="/product.html">Add To Cart</a>
                   </div>
                 </div>
