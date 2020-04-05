@@ -57,7 +57,7 @@ var $dialog = $('#offer');
 $(document).ready(function(){
   $dialog.dialog({
     modal: true,
-    autoOpen: true,
+    autoOpen: false,
     width: 500,
     buttons: {
       "CONTINUE WITHOUT OFFER": function () {
@@ -120,3 +120,8 @@ $('#ingredientModal').on('show.bs.modal', function (event) {
   modal.find('.ingredient-title').text(ingredient_title)
   modal.find('.ingredient-info').text(ingredient_info)
 })
+
+
+$( ".close-bar" ).click(function() {
+  $( ".announcement-bar" ).toggle( "drop", { direction: "up" }, 250 );
+});

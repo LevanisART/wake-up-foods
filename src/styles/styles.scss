@@ -12,18 +12,29 @@
   z-index: 11;
 }
 
-.topbar {
+.announcement-bar {
   background: $primaryColor;
   span {
     font-weight: 500;
+    color: #000;
   }
   .offer-button a {
     background: #000;
-    color: #FFF;
+    color: #fff;
     font: {
       size: 13.5px;
       weight: 500;
     }
+  }
+  .close-bar {
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 }
 
@@ -1512,7 +1523,7 @@
 //   background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 6V10H6V6H10V4H6V0H4V4H0V6H4Z' fill='%23000'/%3E%3C/svg%3E");
 // }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
   .add-product {
     flex-direction: column;
     .quantity {
@@ -2298,7 +2309,7 @@
 }
 
 @media (max-width: 536px) {
-  .topbar {
+  .announcement-bar {
     span {
       text-align: center;
     }
