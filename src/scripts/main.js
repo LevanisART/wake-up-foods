@@ -123,5 +123,5 @@ $('#ingredientModal').on('show.bs.modal', function (event) {
 
 
 $( ".close-bar" ).click(function() {
-  $( ".announcement-bar" ).toggle( "drop", { direction: "up" }, 250 );
+  $( ".announcement-bar" ).hide( "drop", { direction: "up" }, 250 );
 });
